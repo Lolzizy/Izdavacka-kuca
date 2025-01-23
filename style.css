@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f4ed; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+#Navigacija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #241f21;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#ime {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#ime h1 {
+    color: #f4a261; 
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+
+#slika img {
+    width: 50px;
+    height: auto;
+    margin-right: 600px;
+    border-radius: 1px;
+}
+
+#Navigacija div h3 {
+    margin:0 0;
+    font-size: 1rem;
+}
+
+#Navigacija div h3 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#Navigacija div h3 a:hover {
+    color: #f4a261;
+}
+#hero-image {
+    position: relative;
+    height: 90vh; 
+    background: url('bib2.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 78px;
+}
+
+#hero-image img {
+    display: none; 
+}
+
+#hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+#hero-image h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#hero-image p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#Novi_naslovi_body {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#Novi_naslovi_body h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#izlog {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.knjg {
+    text-align: center;
+    max-width: 200px;
+}
+
+.knjg img {
+    width: 175px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.knjg p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#Pesma {
+    padding: 75px 0;
+    background: url('bib.jpg') no-repeat center center/cover;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Pesma h3 {
+    font-size: 2rem;
+    color: #f4a261; 
+    margin-bottom: 20px;
+}
+
+#Pesma p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+audio {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+#Zanrovi_body {
+    padding: 80px 20px;
+    background-color: #eb99001e; 
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
+}
+
+#Zanrovi_body h2 {
+    font-size: 2.5rem; 
+    font-weight: 600; 
+    color: #333; 
+    margin-bottom: 30px;
+    letter-spacing: 1px; 
+}
+
+#Zanrovi_body ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#Zanrovi_body ul li {
+    background-color: #fff; 
+    padding: 15px 25px; 
+    border-radius: 10px;
+    font-size: 1.3rem; 
+    color: #444; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+}
+
+#Zanrovi_body ul li:hover {
+    background-color: #f4a261; 
+    color: #fff; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+#Promocije_body {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-top: 20px;
+}
+
+#Promocije_body h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#Promocije_body video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Promocije_body h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #444;
+}
+
+#Promocije_body p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #666;
+}
+#usp {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('bib.jpg') no-repeat center center/cover;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#usp h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+#tabela {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#tabela h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+#moj {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4a261; 
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#moj h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+#podaci {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#podaci ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#podaci ul li {
+    padding: 10px 0;
+    color: #333;
+}
+
+#podaci b {
+    color: #f4a261;
+}
+
+#frome {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#frome form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#frome label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#frome input[type="text"], 
+#frome input[type="email"], 
+#frome textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+#frome input[type="submit"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #f4a261;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#frome input[type="submit"]:hover {
+    background-color: #e07b47;
+}
